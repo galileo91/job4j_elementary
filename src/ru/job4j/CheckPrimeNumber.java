@@ -7,6 +7,7 @@ public class CheckPrimeNumber {
 
             if (number % i == 0 && number != i && i != 1 || number == 1) {
                 prime = false;
+                break;
             }
         }
         return prime;
