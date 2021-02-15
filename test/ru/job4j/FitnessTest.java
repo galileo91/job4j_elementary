@@ -39,4 +39,15 @@ public class FitnessTest {
 /*        int month = Fitness.calc(50, 90);
         assertThat(month, is(2));*/
     }
+
+    @Test
+    public void whenIvanEquallyByFewNik() {
+        int inIvan = 90;
+        int inNik = 90;
+        int expected = 0;
+        int out = Fitness.calc(inIvan, inNik);
+        Assert.assertEquals(expected, out);
+/*        int month = Fitness.calc(50, 90);
+        assertThat(month, is(2));*/
+    }
 }
