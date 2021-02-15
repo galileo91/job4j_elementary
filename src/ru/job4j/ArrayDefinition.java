@@ -11,5 +11,15 @@ public class ArrayDefinition {
         float[] prices = new float[40];
         System.out.println("Размер массива prices: " + prices.length);
 
+        String[] names = new String[4];
+        names[0] = "Anton";
+        names[1] = "Sergey";
+        names[2] = "Ivan";
+        names[3] = "Nikolay";
+
+        for (int i = 0; i < names.length; i++) {
+            System.out.println(names[i]);
+        }
+
     }
 }
