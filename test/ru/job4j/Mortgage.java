@@ -7,9 +7,9 @@ public class Mortgage {
             year++;
             amount = amount + (int) (amount / 100 * percent);
             amount = amount - salary;
-            if (amount <= 0) {
+/*            if (amount <= 0) {
                 break;
-            }
+            }*/
         }
         return year;
     }
