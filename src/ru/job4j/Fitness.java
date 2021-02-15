@@ -6,7 +6,7 @@ public class Fitness {
 /*        if (ivan < nik) {
 
         }*/
-        while (ivan < nik) {
+        while (ivan <= nik) {
             ivan *= 3;
             nik *= 2;
             month++;

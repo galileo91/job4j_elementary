@@ -44,7 +44,7 @@ public class FitnessTest {
     public void whenIvanEquallyByFewNik() {
         int inIvan = 90;
         int inNik = 90;
-        int expected = 0;
+        int expected = 1;
         int out = Fitness.calc(inIvan, inNik);
         Assert.assertEquals(expected, out);
 /*        int month = Fitness.calc(50, 90);
