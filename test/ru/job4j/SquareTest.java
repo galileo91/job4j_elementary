@@ -12,10 +12,18 @@ public class SquareTest {
         int in = 3;
         int[] expected = new int[] {0, 1, 4};
         int[] out = Square.calculate(in);
-        Assert.assertThat(out, expected);
+        Assert.assertArrayEquals(out, expected);
 /*        int bound = 3;
         int[] rst = Square.calculate(bound);
         int[] expect = new int[] {0, 1, 4};
         assertThat(rst, is(expect));*/
+    }
+
+    @Test
+    public void whenBound5Then014916() {
+        int in = 5;
+        int[] expected = new int[] {0, 1, 4, 9, 16};
+        int[] out = Square.calculate(in);
+        Assert.assertArrayEquals(out, expected);
     }
 }
