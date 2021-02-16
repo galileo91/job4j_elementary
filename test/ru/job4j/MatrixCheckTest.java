@@ -30,4 +30,17 @@ public class MatrixCheckTest {
         Assert.assertEquals(result, true);
         //assertThat(result, is(true));
     }
+
+    @Test
+    public void whenDiagonal() {
+        char[][] input = {
+                {'X', ' ', ' '},
+                {' ', 'X', ' '},
+                {' ', ' ', 'X'},
+        };
+        char[] result = MatrixCheck.extractDiagonal(input);
+        char[] expect = {'X', 'X', 'X'};
+        //assertThat(result, is(expect));
+        Assert.assertArrayEquals(result, expect);
+    }
 }
